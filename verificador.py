@@ -32,18 +32,21 @@ def verificar(politica, usuarios):
         cargo = coluna["cargo"]
         acesso_permitido = politica[cargo]
         if coluna["acesso"] != acesso_permitido:
-            analisados.append(f"🚨 ALERTA: {coluna['usuario']} está com acesso incopativel a sua função no sistema. Por favor, revisar.")
+            analisados.append(f"🚨 ALERTA: {coluna['usuario']} está com acesso incompatível a sua função no sistema. Por favor, revisar.")
     return analisados
 
 
 def relatorio(resultado):
-    #aqui entra a parte dos prints... ainda vou construir. mas eu pensei que a parte dos prints poderia ir abaixo do programa principal. assim como o codigo avançado que vi.
-    analisados.append(f"🚨 ALERTA: {cargo} está com acesso incopativel a sua função no sistema. Por favor, revisar.")
-    pass
+    print("=" * 40)
+    print ("RELATÓRIO DE ACESSOS AOS SISTEMAS")
+    print("=" * 40)
+    for analisados in resultado:
+        print(analisados)
+    print(f"Total de acessos que precisam ser corrigidos: {len(resultado)}")
 
 #Programa principal
 if __name__ == "__main__":
     result_politica = carregar_politica()
     result_usuarios = carregar_usuarios()
     resultado = verificar(result_politica, result_usuarios)
-    print(resultado)
+    relatorio(resultado)
