@@ -51,4 +51,3 @@ if __name__ == "__main__":
     resultado = verificar(result_politica, result_usuarios)
     relatorio(resultado)
 
-#for numero, gato in enumerate(gatos, start=1): | print(f"{numero}. {gato}")
