@@ -1,0 +1,6 @@
+cargo,acesso_permitido
+analista,leitura
+estagiario,leitura
+gestora,admin
+suporte,leitura
+admin,admin
