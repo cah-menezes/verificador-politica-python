@@ -35,12 +35,8 @@ cd verificador-politica-python
 python3 verificador.py
 ```
 
-## 🔗 Conexão com o Portfólio GRC
-
-Este projeto conecta diretamente com o **Projeto 5 — Gestão de Identidade e Acesso (Keycloak)** do portfólio CloudFlux, onde foram configurados RBAC e princípio de privilégio mínimo (least privilege). Aqui, essa mesma lógica foi automatizada em Python.
-
 ## 🗺️ Próximos Passos
 
 * Implementar dicionário aninhado para verificar também sistemas permitidos por cargo e horário de acesso
-* Exportar relatório para arquivo `.txt` (integração com exportador-relatorio-python)
+* Exportar relatório para arquivo `.txt`
 * Interface gráfica com tkinter
