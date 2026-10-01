@@ -40,8 +40,8 @@ def relatorio(resultado):
     print("=" * 40)
     print ("RELATÓRIO DE ACESSOS AOS SISTEMAS")
     print("=" * 40)
-    for analisados in resultado:
-        print(analisados)
+    for numero, analisados in enumerate(resultado, start=1):
+        print(f"{numero}. {analisados}")
     print(f"Total de acessos que precisam ser corrigidos: {len(resultado)}")
 
 #Programa principal
@@ -50,3 +50,5 @@ if __name__ == "__main__":
     result_usuarios = carregar_usuarios()
     resultado = verificar(result_politica, result_usuarios)
     relatorio(resultado)
+
+#for numero, gato in enumerate(gatos, start=1): | print(f"{numero}. {gato}")
