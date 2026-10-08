@@ -35,8 +35,8 @@ cd verificador-politica-python
 python3 verificador.py
 ```
 
-## 🗺️ Próximos Passos
+## 💡 Possíveis evoluções
 
-* Implementar dicionário aninhado para verificar também sistemas permitidos por cargo e horário de acesso
-* Exportar relatório para arquivo `.txt`
-* Interface gráfica com tkinter
+- Verificar também sistemas permitidos por cargo e horário de acesso
+- Exportar relatório em `.txt` ou `.csv` como evidência de auditoria
+- Expandir a política para incluir níveis de acesso por departamento
